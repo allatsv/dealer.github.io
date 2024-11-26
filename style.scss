@@ -149,6 +149,7 @@ legend {
 $color_wh:rgba(255, 255, 255, 1);
 $color_bl:rgba(0, 0, 0, 1);
 $color_gr:rgba(62, 62, 62, 1);
+$color__liggr:rgba(235, 235, 235, 1);
 
 
 .container {
@@ -552,3 +553,222 @@ body {
     height: 1px;
     background-color: #D8D8D8;
 }
+
+/* SPECIAL */
+
+.special {
+    &__blocks {
+        display: flex;
+        column-gap: 20px;
+        padding: 41px 0 61px 0;
+        border-bottom: 1px solid $color__liggr;
+    }
+    &__info {
+        color: $color_wh;
+        font-size: 26px;
+        line-height: 26px;
+        letter-spacing: -3%;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 500;
+        padding: 102px 0 142px 0;
+        white-space: nowrap;
+    }
+    &__title span {
+        letter-spacing: -2%;
+    }
+    &__go {
+        text-decoration: underline !important;
+        color: $color_wh;
+    }
+    &__info {
+        padding: 62px 228px 51px 55px;
+        background: url(img/special-left.png);
+        background-repeat: no-repeat;
+        border-radius: 13px;
+        &-right {
+            padding-right: 183px;
+            background: url(img/special-right.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+/* STOCK */
+
+.stock {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 39px 0 20px 0;
+    }
+}
+
+/* SELL */
+
+.sell {
+    padding: 54px 0 28px 0;
+    &__inner {
+        background: url(img/sell.png);
+        background-repeat: no-repeat;
+    }
+    &__info {
+        color: $color_gr;
+        max-width: 505px;
+        padding: 46px 0 24px 43px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 53.72px;
+        letter-spacing: -2%;
+        font-family: "Ruberoid";
+        padding-bottom: 15px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 21.78px;
+        letter-spacing: -2%;
+        padding-bottom: 40px;
+    }
+    &__text span {
+        letter-spacing: -3%;
+    }
+    &__btn {
+        font-size: 13.2px;
+        line-height: 15.98px;
+        color: $color_wh;
+        padding: 20px 40px;
+        border-radius: 13px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        linear-gradient(89.28deg, #F9F8F7 0.53%, #FFFFFF 99.49%),
+        linear-gradient(89.28deg, #090909 0.53%, #88837E 99.49%);
+        border: 1px solid rgba(179, 179, 179, 1);
+    }
+}
+
+/* DISCOUNT */
+
+.discount {
+    padding-bottom: 101px;
+    &__inner {
+        background: url(img/discount.png);
+        border-radius: 13px;
+    }
+    &__info {
+        color: $color_wh;
+        padding: 46px 0 30px 43px;
+        max-width: 520px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 53.72px;
+        font-family: "Ruberoid";
+        padding-bottom: 15px;
+        letter-spacing: -2%;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 21.78px;
+        padding-bottom: 89px;
+        letter-spacing: -2%;
+    }
+    &__text span {
+        letter-spacing: -3%;
+    }
+    &__btn {
+        font-size: 13.2px;
+        line-height: 15.98px;
+        color: $color_bl;
+        background-color: $color_wh;
+        border-radius: 35px;
+        width: 205px;
+        height: 55px;
+        margin-left: 9px;
+    }
+    &__field {
+        background-color: $color_wh;
+        width: 232px;
+        height: 55px;
+        border-radius: 100px;
+    }
+    &__field::placeholder {
+        color: rgba(217, 217, 217, 1);
+        padding-left: 17px;
+        font-size: 17px;
+        line-height: 20.57px;
+        letter-spacing: -2%;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid rgba(235, 235, 235, 1);
+    &__info {
+        padding-top: 68px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 58px;
+    }
+    &__description {
+        max-width: 299px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 18.15px;
+        padding: 41.34px 0 49px 0;
+        color: rgba(123, 123, 123, 1);
+    }
+    &__social-item {
+        padding-right: 18px;
+    }
+    &__social-item:last-child {
+        padding-right: 0;
+    }
+    &__nav {
+        display: flex;
+        font-size: 16px;
+        line-height: 19.36px;
+    }
+    &__item {
+        &-title {
+            font-size: 22.89px;
+            line-height: 30.74px;
+            letter-spacing: -2%;
+            font-family: "Ruberoid";
+            padding-bottom: 18px;
+        }
+    }
+    &__list {
+        
+       
+    }
+    &__list:nth-child(1) {
+        margin-right: 155px;
+    }
+    &__list:nth-child(2) {
+        margin-right: 128px;
+    }
+    &__bottom {
+        border-top: 1px solid rgba(235, 235, 235, 1);
+    }
+    &__bottom-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0 26px 0;
+    }
+    &__bottom-item {
+        font-size: 16px;
+        line-height: 19.36px;
+        color: rgba(114, 114, 114, 1);
+    }
+}
+
+.stock-top .arrow {
+    position: absolute;
+    right: -14.5px;
+    top: 45%; }
