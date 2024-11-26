@@ -1,0 +1,557 @@
+/* Reset and base styles  */
+body {
+  background-color: #fff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Effloresce";
+  src: url(/fonts/effloresce.woff);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Effloresce";
+  src: url(/fonts/effloresce-antique.woff);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Effloresce";
+  src: url(/fonts/effloresce-bd.woff);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Effloresce";
+  src: url(/fonts/effloresce-bd-it.woff);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Effloresce";
+  src: url(/fonts/effloresce-it.woff);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ruberoid";
+  src: url(/fonts/Ruberoid-Regular.woff);
+}
+.container {
+  width: 1218px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.header__guarantee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+  padding: 12px 0;
+}
+.header__guarantee-text {
+  font-size: 14px;
+  line-height: 18.98px;
+  color: rgb(121, 121, 121);
+}
+.header__guarantee-btn {
+  width: 14px;
+  height: 14px;
+  padding: 5px 0;
+  background-color: rgb(121, 121, 121);
+  border-radius: 50%;
+}
+.header__main {
+  color: rgb(255, 255, 255);
+  background: url(/img/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  padding-top: 23px;
+}
+.header__icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-left: 448.29px;
+}
+.header__title {
+  font-size: 66px;
+  line-height: 66px;
+  text-transform: uppercase;
+  padding-bottom: 21.88px;
+  font-family: "Ruberoid";
+}
+.header__btn {
+  font-size: 13.2px;
+  line-height: 15.98px;
+  color: rgb(94, 94, 94);
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  padding: 20px 0;
+  border-radius: 13px;
+}
+.header__discount {
+  font-size: 14.51px;
+  line-height: 17.56px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 14.29px;
+  padding: 12.43px 22.66px;
+  max-width: 153.95px;
+  white-space: nowrap;
+  transform: rotate(3.81deg);
+  position: absolute;
+  top: 153px;
+  right: 62px;
+}
+.header__info {
+  max-width: 778px;
+  padding: 130.12px 0 260px 0;
+  position: relative;
+}
+
+.nav__list {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  padding-right: 134px;
+}
+
+.nav__item {
+  color: rgb(255, 255, 255);
+  font-size: 12.25px;
+  line-height: 14.82px;
+  letter-spacing: 1%;
+}
+
+/* STORIES */
+.stories {
+  margin-top: 50px;
+}
+.stories__inner {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.stories__item {
+  text-align: center;
+}
+.stories__img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  height: 100%;
+  width: 100%;
+}
+.stories__link {
+  background: black;
+  border-radius: 50%;
+  padding: 1px;
+  display: block;
+  width: 82px;
+  height: 82px;
+}
+.stories__item--title {
+  padding-top: 9px;
+  display: block;
+  font-size: 15px;
+  font-family: "Ruberoid";
+}
+
+/* POPULAR */
+.products-top {
+  margin-bottom: 20px;
+  margin-top: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-top-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 100px;
+  border: 1px solid #B3B3B3;
+  font-size: 13.2px;
+  max-height: 36px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-family: "Ruberoid";
+}
+
+.products {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 15.98px;
+}
+.products__product {
+  background-color: #fff;
+  border-radius: 13px;
+  border: 1px #d6d6d6 solid;
+  position: relative;
+  color: rgb(62, 62, 62);
+}
+.products__product-inner {
+  text-align: center;
+  padding: 55px 15px 12px 15px;
+}
+.products__product-img {
+  max-width: 254px;
+}
+.products__product-name {
+  font-family: "Inter";
+  font-size: 15.04px;
+  line-height: 18.2px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.products__product-name span {
+  font-weight: 800;
+}
+.products__product-price {
+  font-family: "Ruberoid";
+  font-size: 15.04px;
+  line-height: 20.39px;
+}
+
+.popular {
+  margin-bottom: 95px;
+}
+
+.new {
+  margin-bottom: 89px;
+}
+
+.hot {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  font-size: 13.2px;
+  margin-bottom: 7px;
+  font-family: "Inter-Medium";
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+}
+
+.like {
+  position: absolute;
+  top: 22px;
+  right: 14.5px;
+}
+
+.new .arrow {
+  position: absolute;
+  right: -14.5px;
+  top: 45%;
+}
+
+.popular .arrow {
+  position: absolute;
+  right: -14.5px;
+  top: 45%;
+}
+
+.walk .arrow {
+  position: absolute;
+  right: -14.5px;
+  top: 45%;
+}
+
+.arrow {
+  background-color: #797979;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 11.5px;
+  padding-left: 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+.arrow img {
+  width: 7.5px;
+  height: 12.5px;
+}
+
+/* NEW */
+.new-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  font-size: 13.2px;
+  margin-bottom: 7px;
+  font-family: "Inter-Medium";
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(255, 76, 76);
+  color: white;
+}
+
+.discont {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  font-size: 13.2px;
+  margin-bottom: 7px;
+  font-family: "Inter-Medium";
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(255, 76, 76);
+  color: white;
+}
+
+.pre-loved {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  font-size: 13.2px;
+  margin-bottom: 7px;
+  font-family: "Inter-Medium";
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(252, 255, 98);
+  background-color: black;
+}
+
+/*  CATEGORIES */
+.categories {
+  margin-bottom: 95px;
+}
+.categories-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.categories-link {
+  position: relative;
+}
+
+.category-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category__title {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.41px;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+/* WALK */
+.walk {
+  padding-bottom: 95px;
+}
+
+/* NIKE */
+.nike {
+  margin-bottom: 95px;
+}
+.nike__pre-title {
+  font-size: 40px;
+  line-height: 53.72px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  font-family: "Ruberoid";
+}
+.nike__title-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  font-family: "Effloresce";
+}
+.nike__title {
+  font-family: "Effloresce";
+  font-size: 80.57px;
+  font-weight: 400;
+  line-height: 97.65px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.nike__categories {
+  margin-top: 71px;
+  display: flex;
+  justify-content: space-between;
+}
+.nike__category {
+  position: relative;
+}
+.nike__category .arrow {
+  position: absolute;
+  top: 17px;
+  right: 23px;
+}
+.nike__category-title {
+  position: absolute;
+  bottom: 19px;
+  left: 28px;
+  font-family: "Ruberoid";
+  font-size: 22.99px;
+  font-weight: 400;
+  line-height: 22.99px;
+  letter-spacing: -0.05em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.nike__category-title--2 {
+  top: 29px;
+  left: 27px;
+}
+.nike__spec {
+  margin-top: 95px;
+  width: 100%;
+  color: #fff;
+  width: 100%;
+}
+.nike__spec-inner {
+  width: 100%;
+  position: relative;
+}
+.nike__spec-title {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  top: 58px;
+  left: 65px;
+}
+.nike__spec-subtitle {
+  position: absolute;
+  font-family: "Ruberoid";
+  font-size: 60px;
+  line-height: 60px;
+  left: 65px;
+  bottom: 42px;
+}
+.nike__spec-img {
+  width: 100%;
+}
+.nike__slide {
+  position: absolute;
+  top: 61px;
+  right: 58px;
+}
+
+.slider-block {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 2;
+  height: 1px;
+  background-color: #D8D8D8;
+}/*# sourceMappingURL=style.css.map */

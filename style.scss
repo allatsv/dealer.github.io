@@ -1,0 +1,554 @@
+/* Reset and base styles  */
+body{
+    background-color: #fff;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+@mixin Product-note() { 
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 10px 15px;
+    border-radius: 13px;
+    font-size: 13.2px;
+    margin-bottom: 7px;
+    font-family: "Inter-Medium";
+    text-transform: uppercase;
+    font-weight: 600;
+ }
+
+ @mixin Product-arrow() { 
+    position: absolute;
+    right: -14.5px;
+    top: 45%;
+ }
+ 
+
+
+
+ @font-face {
+	font-family: 'Effloresce';
+	src: url(/fonts/effloresce.woff);
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Effloresce';
+	src: url(/fonts/effloresce-antique.woff);
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Effloresce';
+	src: url(/fonts/effloresce-bd.woff);
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Effloresce';
+	src: url(/fonts/effloresce-bd-it.woff);
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Effloresce';
+	src: url(/fonts/effloresce-it.woff);
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Ruberoid';
+	src: url(/fonts/Ruberoid-Regular.woff);
+}
+
+
+
+
+$color_wh:rgba(255, 255, 255, 1);
+$color_bl:rgba(0, 0, 0, 1);
+$color_gr:rgba(62, 62, 62, 1);
+
+
+.container {
+    width: 1218px;
+    margin: 0 auto;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* HEADER */
+
+.header {
+    &__guarantee {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 19px;
+        padding: 12px 0;
+        &-text {
+            font-size: 14px;
+            line-height: 18.98px;
+            color: rgba(121, 121, 121, 1);
+        }
+        &-btn {
+            width: 14px;
+            height: 14px;
+            padding: 5px 0;
+            background-color: rgba(121, 121, 121, 1);
+            border-radius: 50%;
+        }
+    }
+    &__main {
+        color: $color_wh;
+        background: url(/img/main.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        padding-top: 23px;
+    }
+    &__icons {
+        display: flex;
+        column-gap: 20px;
+        padding-left: 448.29px;
+    }
+    &__title {
+        font-size: 66px;
+        line-height: 66px;
+        text-transform: uppercase;
+        padding-bottom: 21.88px;
+        font-family: 'Ruberoid';
+    }
+    &__btn {
+        font-size: 13.2px;
+        line-height: 15.98px;
+        color: rgba(94, 94, 94, 1);
+        background-color: $color_wh;
+        width: 200px;
+        padding: 20px 0;
+        border-radius: 13px;
+    }
+    &__discount {
+        font-size: 14.51px;
+        line-height: 17.56px;
+        background-color: $color_bl;
+        border-radius: 14.29px;
+        padding: 12.43px 22.66px;
+        max-width: 153.95px;
+        white-space: nowrap;
+        transform: rotate(3.81deg);
+        position: absolute;
+        top: 153px;
+        right: 62px;
+    }
+    &__info {
+        max-width: 778px;
+        padding: 130.12px 0 260px 0;
+        position: relative;
+    }
+}
+.nav__list {
+    display: flex;
+    column-gap: 25px;
+    padding-right: 134px;
+}
+.nav__item {
+    color: $color_wh;
+    font-size: 12.25px;
+    line-height: 14.82px;
+    letter-spacing: 1%;
+}
+
+/* STORIES */
+
+.stories {
+    margin-top: 50px;
+    &__inner {
+       display: flex;
+       justify-content: center;
+       column-gap: 20px;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__img{
+        border-radius: 50%;
+        border: 3px solid #fff;
+        height: 100%;
+        width: 100%;
+    }
+    &__link{
+        background: black;
+        border-radius: 50%;
+        padding: 1px;
+        display: block;
+        width: 82px;
+        height: 82px;
+    }
+    &__item--title {
+        padding-top: 9px;
+        display: block;
+        font-size: 15px;
+        font-family: 'Ruberoid';
+    }
+}
+
+/* POPULAR */
+
+.products-top{
+        margin-bottom: 20px;
+        margin-top: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-btn{
+            display: block;
+            text-align: center;
+            padding: 10px 20px;
+            color: black;
+            border-radius: 100px;
+            border: 1px solid #B3B3B3;
+            font-size: 13.2px;
+            max-height: 36px;
+        }
+}
+.section-title{
+    font-size: 40px;
+    font-family: 'Ruberoid';
+}
+.products{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 15.98px;
+    &__product{
+        background-color: #fff;
+        border-radius: 13px;
+        border: 1px #d6d6d6 solid;
+        position: relative;
+        color: $color_gr;
+        &-inner{
+            text-align: center;
+            padding: 55px 15px 12px 15px;
+        }
+        &-img{
+            max-width: 254px;
+        }
+        &-name{
+            font-family: "Inter";
+            font-size: 15.04px;
+            line-height: 18.2px;
+            text-align: center;
+            span{
+                font-weight: 800;
+            }
+            margin-bottom: 15px;
+            
+        }
+        &-price{
+            font-family: "Ruberoid";
+            font-size: 15.04px;
+            line-height: 20.39px;
+        }
+    }
+}
+.popular {
+    margin-bottom: 95px;
+}
+.new{
+    margin-bottom: 89px;
+}
+
+
+.hot{
+    @include Product-note;
+    background-color: black;
+    color: white;
+
+}
+.like{
+    position: absolute;
+    top: 22px;
+    right: 14.5px;
+}
+.new{
+    .arrow{
+        @include Product-arrow;
+    }
+}
+.popular{
+    .arrow{
+        @include Product-arrow;
+    }
+}
+.walk{
+    .arrow{
+        @include Product-arrow;
+    }
+}
+.arrow{
+    
+    background-color: #797979;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 11.5px;
+    padding-left: 15px;
+    cursor: pointer;
+    z-index: 100;
+    img{
+        width: 7.5px;
+        height: 12.5px;
+        
+    }
+}
+
+/* NEW */
+
+.new-icon{
+    @include Product-note;
+    background-color: rgba(255, 76, 76, 1);
+    color: white;
+}
+
+.discont{
+    @include Product-note;
+    background-color: rgba(255, 76, 76, 1);
+    color: white;
+}
+
+.pre-loved{
+    @include Product-note;
+    color: rgba(252, 255, 98, 1);
+    background-color: black;
+}
+
+/*  CATEGORIES */
+
+.categories{
+    margin-bottom: 95px;
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-link{
+        position: relative;
+    }
+}
+
+.category{
+    &-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title{
+        position: absolute;
+        bottom: 15px;
+        left: 30px;
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48.41px;
+        letter-spacing: -0.02em;
+       text-transform: lowercase; 
+       color: #fff;
+    }
+}
+
+/* WALK */
+
+.walk{
+    padding-bottom: 95px;
+}
+
+/* NIKE */
+
+.nike{
+    margin-bottom: 95px;
+    &__pre-title{
+        font-size: 40px;
+        line-height: 53.72px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        font-family: 'Ruberoid';
+    }
+    &__title-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 50px;
+        font-family: 'Effloresce';
+    }
+    &__title{
+        font-family: "Effloresce";
+        font-size: 80.57px;
+        font-weight: 400;
+        line-height: 97.65px;
+        letter-spacing: -0.02em;
+        text-align: center; 
+    }
+    &__categories{
+        margin-top: 71px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__category{
+        position: relative;
+        .arrow{
+            position: absolute;
+            top: 17px;
+            right: 23px;
+        }
+        &-title{
+            position: absolute;
+            bottom: 19px;
+            left: 28px;
+            font-family: "Ruberoid";
+            font-size: 22.99px;
+            font-weight: 400;
+            line-height: 22.99px;
+            letter-spacing: -0.05em;
+            color: rgba(255, 255, 255, 1);
+            text-transform: uppercase;
+            &--2{
+                top: 29px;
+                left: 27px;
+            }
+        }
+    }
+    &__spec{
+        margin-top: 95px;
+        width: 100%;
+        color: #fff;
+        width: 100%;
+        &-inner{
+            width: 100%;
+            position: relative;
+        }
+        &-title  {
+            position: absolute;
+            font-family: "Inter";
+            font-size: 26px;
+            line-height: 26px;
+            letter-spacing: -0.03em;
+            top: 58px;
+            left: 65px;
+        }          
+        
+        &-subtitle{
+            position: absolute;
+            font-family:"Ruberoid";
+            font-size: 60px;
+            line-height: 60px;
+            left: 65px;
+            bottom: 42px;
+        }
+        &-img{
+            width: 100%;
+        }
+    }
+    &__slide{
+        position: absolute;
+        top: 61px;
+        right: 58px;
+    }
+}
+
+.slider-block{
+    display: flex;
+    align-items: center;
+}
+.line{
+    flex: 2;
+    height: 1px;
+    background-color: #D8D8D8;
+}
