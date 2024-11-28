@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__category">
+            <div class="container">
+                <div class="header__top">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li><a href="#" class="nav__item">Одежда</a></li>
+                            <li><a href="#" class="nav__item">Обувь</a></li>
+                            <li><a href="#" class="nav__item">Аксессуары</a></li>
+                            <li><a href="#" class="nav__item">Сумки</a></li>
+                            <li><a href="#" class="nav__item">Товары для спорта</a></li>
+                        </ul>
+                    </nav>
+                        <img src="/icons/logo.svg" alt="" class="logo">
+                        <div class="header__icons">
+                            <img src="/icons/like-header.svg" alt="" class="header__icons-icon">
+                            <img src="/icons/cart.svg" alt="" class="header__icons-icon">
+                            <img src="/icons/search.svg" alt="" class="header__icons-icon">
+                        </div>
+                </div>
+
+                <div class="header__category-bottom">
+                    <h3 class="header__categories">Главная / Каталог /</h3>
+                    <h class="header__category-title">одежда</h>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="choosing-categories">
+        <div class="container">
+            <div class="choosing-categories__inner">
+                <a class="choosing-categories__link" href="#">Рекомендации</a>
+                <ul class="choosing-categories__list">
+                    <li class="choosing-categories__list-item">мужская одежда</li>
+                    <li class="choosing-categories__list-item">женская одежда</li>
+                    <li class="choosing-categories__list-item">зимняя одежда</li>
+                    <li class="choosing-categories__list-item">одежда custom</li>
+                    <li class="choosing-categories__list-item">футболки</li>
+                    <li class="choosing-categories__list-item">лонгсливы</li>
+                    <li class="choosing-categories__list-item">на вечер</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="main__inner">
+                <aside class="categories-aside">
+                    
+                    <div class="categories-aside__inner">
+                        <h2 class="categories-aside__title">
+                            Категории
+                        </h2>
+                        <div class="categories-aside__block">
+                            <h3 class="categories-aside__type categories-aside__type-active">
+                                Одежда
+                            </h3>
+                            <ul class="categories-aside__list">
+                                <li class="categories-aside__thing">Свитера, трикотаж </li>
+                                <li class="categories-aside__thing">Худи, свитшоты </li>
+                                <li class="categories-aside__thing">Футболки, поло </li>
+                                <li class="categories-aside__thing"> Кофты на молнии</li>
+                                <li class="categories-aside__thing">Лонгсливы</li>
+                                <li class="categories-aside__thing">В наличии </li>
+                            </ul>                           
+                        </div>
+                     
+                        <div class="categories-aside__block">
+                            <h3 class="categories-aside__type ">
+                                Верхняя одежда
+                            </h3>                         
+                        </div>
+                        <div class="categories-aside__block">
+                            <h3 class="categories-aside__type">
+                                Обувь                            </h3>                         
+                        </div>
+                        <div class="categories-aside__block">
+                            <h3 class="categories-aside__type">
+                                Аксессуары                            </h3>                         
+                        </div>
+                        <div class="categories-aside__block">
+                            <h3 class="categories-aside__type">
+                                Сумки                            </h3>                         
+                        </div>
+                        <div class="categories-aside__block">
+                            <h3 class="categories-aside__type">
+                                Товары для спорта
+                            </h3>                         
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="categories-aside__inner">
+                        <h2 class="categories-aside__title">
+                            Фильтры
+                        </h2>
+                        <div class="categories-aside__thing"> <h4>Цена</h4>
+
+                        </div>
+                        <div class="categories-aside__thing"> <h4>Цвет</h4>
+
+                                <div class="checkbox__inner">
+                                    <input class="checkbox__choice" type="checkbox" id="wr" name="wr1">
+                                    <label class="checkbox__text" for="wr">Белый</label>
+                                </div>
+                              
+                                <div class="checkbox__inner">
+                                    <input class="checkbox__choice" type="checkbox" id="wr" name="wr2">
+                                    <label class="checkbox__text" for="wr">Красный</label>
+                                </div>
+                                <div class="checkbox__inner">
+                                    <input class="checkbox__choice" type="checkbox" id="wr" name="wr3">
+                                    <label class="checkbox__text" for="wr">Черный</label>
+                                </div>
+                   
+                            <div class="search">
+                                <input class="search__input" type="text" placeholder="Поиск цвета">
+                            </div>
+                            
+                        </div>
+                        <div class="categories-aside__thing">
+                            <h4>Бренд</h4>
+                            <div class="search">
+                                <input class="search__input" type="text" placeholder="Поиск бренда">
+                            </div>
+                           
+                        </div>
+  
+                    </div>
+                </aside>
+                <div class="main__products">
+                    <div class="products">
+                        <div class="products__product">
+                            <div class="hot">hot</div>
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <div class="hot">hot</div>
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <div class="discont">-40%</div>
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <div class="pre-loved">pre-loved</div>
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <div class="hot">hot</div>
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                        <div class="products__product">
+                            <div class="hot">hot</div>
+                            <img class="like" src="icons/like.svg" alt="like">
+                            <div class="products__product-inner">
+                                <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                                <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                                <span class="products__product-price">21 999₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     
+    </div>
+</body>
+</html>
