@@ -54,6 +54,7 @@
                     <li class="choosing-categories__list-item">лонгсливы</li>
                     <li class="choosing-categories__list-item">на вечер</li>
                 </ul>
+                
             </div>
         </div>
         
@@ -78,8 +79,11 @@
                                 <li class="categories-aside__thing">Футболки, поло </li>
                                 <li class="categories-aside__thing"> Кофты на молнии</li>
                                 <li class="categories-aside__thing">Лонгсливы</li>
-                                <li class="categories-aside__thing">В наличии </li>
-                            </ul>                           
+                                <li class="categories-aside__thing" >В наличии </li>
+                            </ul>    
+                            <div class="line-grey">
+                                
+                            </div>                       
                         </div>
                      
                         <div class="categories-aside__block">
@@ -104,6 +108,7 @@
                                 Товары для спорта
                             </h3>                         
                         </div>
+                       
                         
                         
                     </div>
@@ -111,28 +116,58 @@
                         <h2 class="categories-aside__title">
                             Фильтры
                         </h2>
-                        <div class="categories-aside__thing"> <h4>Цена</h4>
+                        <div class="categories-aside__thing"  > 
+                            <h4>Цена</h4>
 
+                            <div class="diapazon">
+                                <div class="price-input">
+                                    <div class="field">
+                                      
+                                      <input type="number" class="input-min" value="32780">
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="field">
+                                      
+                                      <input type="number" class="input-max" value="82780">
+                                    </div>
+                                  </div>
+                                  <div class="slider">
+                                    <div class="progress"></div>
+                                  </div>
+                                  <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="100000" value="32780" step="10">
+                                    <input type="range" class="range-max" min="0" max="100000" value="82780" step="10">
+                                  </div>
+                            </div>
+                            
+                            
                         </div>
-                        <div class="categories-aside__thing"> <h4>Цвет</h4>
-
-                                <div class="checkbox__inner">
-                                    <input class="checkbox__choice" type="checkbox" id="wr" name="wr1">
-                                    <label class="checkbox__text" for="wr">Белый</label>
-                                </div>
-                              
-                                <div class="checkbox__inner">
-                                    <input class="checkbox__choice" type="checkbox" id="wr" name="wr2">
-                                    <label class="checkbox__text" for="wr">Красный</label>
-                                </div>
-                                <div class="checkbox__inner">
-                                    <input class="checkbox__choice" type="checkbox" id="wr" name="wr3">
-                                    <label class="checkbox__text" for="wr">Черный</label>
-                                </div>
                    
+                        <div class="categories-aside__thing"> <h4>Цвет</h4>
                             <div class="search">
                                 <input class="search__input" type="text" placeholder="Поиск цвета">
                             </div>
+                            <div class="checkbox-color">
+                                <div class="checkbox__inner">
+                                    <input class="checkbox__choice" type="checkbox" id="wr0" name="wr1">
+                                    <label class="checkbox__text" for="wr0"><span></span> Белый</label>
+                                </div>
+                              
+                                <div class="checkbox__inner">
+                                    <input class="checkbox__choice" type="checkbox" id="wr2" name="wr2">
+                                    <label class="checkbox__text" for="wr2"><span></span> Красный</label>
+                                </div>
+                                <div class="checkbox__inner">
+                                    <input class="checkbox__choice" type="checkbox" id="wr1" name="wr3">
+                                    <label class="checkbox__text" for="wr1"><span></span> Черный</label>
+                                </div>
+                            </div>
+                            <div class="line-grey">
+
+                            </div>
+                                
+                   
+                            
                             
                         </div>
                         <div class="categories-aside__thing">
@@ -232,5 +267,6 @@
         </div>
      
     </div>
+    <script src="diapazon.js"></script>
 </body>
 </html>

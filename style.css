@@ -149,10 +149,8 @@ body {
   border-radius: 50%;
 }
 .header__main {
+  position: relative;
   color: rgb(255, 255, 255);
-  background: url(/img/main.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .header__top {
   display: flex;
@@ -467,6 +465,7 @@ body {
   font-family: "Ruberoid";
 }
 .nike__title-inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -765,12 +764,6 @@ body {
   color: rgb(114, 114, 114);
 }
 
-.arrow {
-  position: absolute;
-  right: -14.5px;
-  top: 45%;
-}
-
 .choosing-categories {
   font-family: "Inter";
 }
@@ -823,7 +816,7 @@ body {
   font-family: Inter;
   font-size: 20px;
   line-height: 24.2px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .categories-aside__type-active {
   font-weight: 500;
@@ -862,6 +855,46 @@ body {
   border-radius: 8px;
 }
 
+.line-grey {
+  content: "";
+  display: block;
+  background-color: rgb(235, 235, 235);
+  height: 1px;
+  box-shadow: 0px -1px 3.5px 0px rgba(0, 0, 0, 0.16);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox-color {
+  margin-top: 10px;
+}
+.checkbox__inner:nth-child(1) span {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 31px;
+  margin-right: 2.5px;
+}
+.checkbox__inner:nth-child(2) span {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(149, 6, 16);
+  border-radius: 31px;
+  margin-right: 2.5px;
+}
+.checkbox__inner:nth-child(3) span {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 31px;
+  margin-right: 2.5px;
+}
 .checkbox__choice {
   position: absolute;
   z-index: -1;
@@ -1374,6 +1407,9 @@ body {
   justify-content: right;
 }
 
+.history__left {
+  max-width: 797px;
+}
 .history__nav {
   display: flex;
   font-size: 12.25px;
@@ -1452,4 +1488,140 @@ body {
   font-family: "Ruberoid";
   color: rgb(124, 124, 124);
   padding: 15px 0 50px 8px;
+}
+
+.slides-header {
+  content: "";
+  max-width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.slider-header {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -2;
+  transition: opacity 1s;
+}
+.slider-header:nth-child(1) {
+  background-image: url(img/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-header:nth-child(2) {
+  background-image: url(img/main1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-header:nth-child(3) {
+  background-image: url(img/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-header:nth-child(4) {
+  background-image: url(img/main1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.showing {
+  opacity: 1;
+  z-index: -1;
+}
+
+.slick-line {
+  display: flex;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  padding-bottom: 24px;
+  justify-content: center;
+}
+.slick-line__item {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 72px;
+  background-color: rgba(255, 255, 255, 0.37);
+}
+
+.price-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0 16px;
+}
+
+.field {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid rgb(179, 179, 179);
+  padding: 7px 0px 7px 8px;
+}
+
+.separator {
+  content: "";
+  width: 9px;
+  height: 1px;
+  margin: 0 4px;
+  background-color: #090909;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  height: 2px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 100%;
+  left: 30%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: rgb(255, 127, 98);
+}
+
+.range-input {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: solid 2px;
+  background: white;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }/*# sourceMappingURL=style.css.map */
