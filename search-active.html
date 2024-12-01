@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__search">
+            <div class="container">
+                <div class="header__top">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li><a href="#" class="nav__item">Одежда</a></li>
+                            <li><a href="#" class="nav__item">Обувь</a></li>
+                            <li><a href="#" class="nav__item">Аксессуары</a></li>
+                            <li><a href="#" class="nav__item">Сумки</a></li>
+                            <li><a href="#" class="nav__item">Товары для спорта</a></li>
+                        </ul>
+                    </nav>
+                        
+                        <svg width="93" height="15" viewBox="0 0 93 15" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12875 14.9396L1.37391 14.4166V0.458647L0.0901043 0.0738583C0.00613356 0.0487547 0.0733102 0.0520229 0.112581 0.0520229C1.03946 0.0546379 7.56619 0.0696735 7.56619 0.0696735C9.94456 0.058691 11.9216 0.961762 13.4195 2.30543C14.8786 3.61423 15.8897 5.33452 15.8897 7.52372C15.8897 9.25172 15.2738 10.4476 14.592 11.477C12.0644 15.2937 7.25395 14.9995 7.25395 14.9995H1.1665C1.13581 14.9995 1.11566 14.9675 1.12875 14.9396ZM64.7895 0.0479708V15.0048H76.4999V14.2149C73.5023 14.2149 70.5047 14.2149 67.5072 14.2149V7.75646H75.78V6.9276H67.4941V0.835069C70.4959 0.835069 73.4979 0.835069 76.4999 0.835069V0.0618296L64.7895 0.0479708ZM79.0657 15.0048V0.0479708H87.1056C87.8998 0.0479708 92.3774 0.610968 92.3774 3.69288C92.3774 6.25359 89.8159 7.52638 87.4765 7.52638H84.4056C84.4056 7.52638 84.3591 10.1508 88.7148 11.0277C90.0654 11.2996 91.0962 11.6714 91.7198 12.2121C93.1074 13.4152 92.925 15.0048 92.925 15.0048H89.1079C88.6199 14.1614 87.4428 13.0014 86.5627 12.2207C85.3623 11.1556 83.5342 9.13161 83.5342 7.04042H86.5528C86.9085 7.01085 87.9973 7.01013 88.8112 6.08525C89.2309 5.60848 89.4238 4.89382 89.4238 3.82297C89.4238 0.512515 85.8347 0.652546 85.6934 0.652546H81.6503V15.0048H79.0657ZM50.745 0.0479708H53.523V14.24H62.494V15.0032L50.745 15.0048V0.0479708ZM30.5574 15.0048H31.4197L34.0542 10.4013H43.2864L45.8787 14.9949H49.1059L40.4615 0.0479708H37.1003L38.4305 1.23999L30.5574 15.0048ZM34.3985 9.7997L38.7028 2.27892L42.9469 9.7997H34.3985ZM17.627 0.0479708V15.0048H29.3372V14.2149C26.3398 14.2149 23.3422 14.2149 20.3446 14.2149V7.75646H28.6175V6.9276H20.3315V0.835069C23.3334 0.835069 26.3353 0.835069 29.3372 0.835069V0.0618296L17.627 0.0479708ZM4.08721 0.391313C5.55389 0.391313 12.9103 0.0479708 12.9103 7.52638C12.9103 11.9611 10.1224 14.3853 7.13222 14.3853H4.14748L4.08721 0.391313Z" fill="black"/>
+                        </svg>
+
+                        <div class="header__icons">
+                            <img src="/icons/like-header-black.svg" alt="" class="header__icons-icon">
+                            <img src="/icons/cart-header-black.svg" alt="" class="header__icons-icon">
+                            <img src="/icons/search-header-black.svg" alt="" class="header__icons-icon header__icons-icon-select">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="container">
+            <div class="search__inner">
+                <div class="search__search">
+                    <div class="search__field">
+                        <img src="icons/search-search.svg" alt="" class="search__field-img">
+                        <input value="Nike" type="text" class="search__field-input">
+                    </div>
+                    <p class="search__field-close">закрыть</p>
+                </div>
+
+                <div class="choosing-categories">
+                    <div class="container">
+                        <div class="choosing-categories__inner">
+                            <a class="choosing-categories__link" href="#">Рекомендации</a>
+                            <ul class="choosing-categories__list">
+                                <li class="choosing-categories__list-item">мужская одежда</li>
+                                <li class="choosing-categories__list-item">женская одежда</li>
+                                <li class="choosing-categories__list-item">зимняя одежда</li>
+                                <li class="choosing-categories__list-item">одежда custom</li>
+                                <li class="choosing-categories__list-item">футболки</li>
+                                <li class="choosing-categories__list-item">лонгсливы</li>
+                                <li class="choosing-categories__list-item">на вечер</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="products__oftenlook">
+                        <a class="choosing-categories__link" href="#">Часто ищут</a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Кроссовки</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Платье</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Беговые кроссовки</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Сумка женская</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Кастомные кроссовки</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Pre-loved модели</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Деловая обувь</p>
+                        </div></a>
+                        <a href="#"><div class="products__oftenlook-flex">
+                            <img src="icons/search-oftenlook.svg" alt="" class="products__oftenlook-img">
+                            <p class="products__oftenlook-text">Очки Versace</p>
+                        </div></a>
+                    </div>
+                    <div class="products__product">
+                        
+                        <div class="new-icon">new</div>
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt=""></a> 
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        <div class="discont">-40%</div>
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt=""></a>
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="products__product">
+                        <div class="pre-loved">pre-loved</div>
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt=""></a> 
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        
+                        <div class="new-icon">new</div>
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt=""></a> 
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        <div class="discont">-40%</div>
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        
+                        <img class="like" src="icons/like.svg" alt="like">
+                        <div class="products__product-inner">
+                            <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt=""></a>
+                            <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
+                            <span class="products__product-price">21 999₽</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__concierge">
+        <div class="header__track">
             <div class="container">
                 <div class="header__top">
                     <nav class="nav">
@@ -33,52 +33,52 @@
                         </div>
                 </div>
 
-                <div class="header__category-bottom">
-                    <h3 class="header__categories">Главная / Каталог /</h3>
-                    <h class="header__category-title">консьерж-сервис</h>
+                <div class="header__track-bottom">
+                    <div class="header__track-info">
+                        <h1 class="header__track-title">Отследить заказ</h1>
+                        <p class="header__track-text">Введите номер заказа, <span>чтобы отследить его</span></p>
+                        <div class="header__track-check">
+                            <input placeholder="Номер заказа" type="text" class="header__track-input">
+                            <button class="header__track-btn">Проверить</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <section class="searchBg">
+    
+    <section class="track">
         <div class="container">
-            <div class="searchBg__inner">
-                <div class="searchBg__info">
-                    <h2 class="requests__title requests__title-searchBg">Не нашли нужный товар?
-                        Найдём мы</h2>
-                    <p class="requests__text">Оставьте заявку на любой желанный товар, если не нашли его в наших социальных сетях или на сайте. Наши менеджеры обработают Вашу заявку свяжутся с Вами для уточнения деталей и возможности заказа. Доставка по всему миру.</p>
+            <div class="track__inner">
+                <div class="track__order">
+                    <h2 class="track__title">Ваш заказ:</h2>
+                    <div class="track__block">
+                        <div class="track__block-info">
+                            <div class="track__block-top">
+                                <div class="make-order__card-preloved">PRE-LOVED</div>
+                                <img src="icons/like.svg" alt="" class="track__block-like">
+                            </div>
+                            <img src="img/track-product.png" alt="" class="track__block-img">
+                            <h4 class="track__block-title">Кроссовки <span>NIKE</span> SB DUNK LOW PRO QS Neckface</h4>
+                            <div class="track__block-character">
+                                <div class="track__block-character-size">
+                                    <p class="track__block-character-title">размер</p>
+                                    <p class="track__block-character-text">41 RU</p>
+                                </div>
+                                <div class="track__block-character-color">
+                                    <p class="track__block-character-title">цвет</p>
+                                    <p class="track__block-character-text">Black</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/concierge-bg.png" alt="" class="searchBg-img">
-            </div>
-        </div>
-    </section>
 
-    <section class="forminfo">
-        <div class="container">
-            <div class="forminfo__form">
-                <div class="forminfo__info">
-                    <h3 class="forminfo__title">Заполните форму</h3>
-                    <div class="forminfo__field">
-                        <p class="forminfo__field-text">Название модели, <span>если знаете</span></p>
-                        <input type="text" placeholder="Например: сумка Jacquemus Le Bambino" class="forminfo__field-input">
+                <div class="track__go">
+                    <div class="track__go-info">
+                    <h3 class="track__go-title">Перейти к новым покупкам</h3>
+                    <button class="track__go-btn">В каталог</button>
                     </div>
-                    <div class="forminfo__field">
-                        <p class="forminfo__field-text">Площадка, <span>на которой в последний раз видели модель</span></p>
-                        <input type="text" placeholder="Необязательно" class="forminfo__field-input">
-                    </div>
-                    <div class="forminfo__field">
-                        <p class="forminfo__field-text">Ваш телефон*</p>
-                        <input type="number" placeholder="+7 (999) 999-99-99" class="forminfo__field-input">
-                    </div>
-                    <div class="forminfo__buttons">
-                    <div class="forminfo__btn">
-                    <img src="icons/clip.svg" alt="" class="forminfo__download-img">
-                    <button class="forminfo__download">загрузить фото модели</button>
-                    </div>
-                    <button class="univer__btn">Отправить запрос</button>
-                </div>
-                <p class="forminfo__terms">Нажимая на кнопку, вы соглашаетесь и принимаете наши Условия обработки персональных данных и нашу Политику конфиденциальности.</p>
                 </div>
             </div>
         </div>
