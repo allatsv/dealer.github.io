@@ -115,32 +115,17 @@ legend {
 
  @font-face {
 	font-family: 'Effloresce';
+
 	src: url(/fonts/effloresce.woff);
+    font-weight: 400;
     font-style: normal;
 }
-@font-face {
-	font-family: 'Effloresce';
-	src: url(/fonts/effloresce-antique.woff);
-    font-style: normal;
-}
-@font-face {
-	font-family: 'Effloresce';
-	src: url(/fonts/effloresce-bd.woff);
-    font-style: normal;
-}
-@font-face {
-	font-family: 'Effloresce';
-	src: url(/fonts/effloresce-bd-it.woff);
-    font-style: normal;
-}
-@font-face {
-	font-family: 'Effloresce';
-	src: url(/fonts/effloresce-it.woff);
-    font-style: normal;
-}
+
 @font-face {
 	font-family: 'Ruberoid';
 	src: url(/fonts/Ruberoid-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -153,7 +138,8 @@ $color__liggr:rgba(235, 235, 235, 1);
 
 
 .container {
-    width: 1218px;
+    position: relative;
+    width: 1200px;
     margin: 0 auto;
 }
 body {
@@ -186,6 +172,8 @@ body {
     &__main {
         position: relative;
         color: $color_wh;
+        height: 100%;
+        min-height: 308px;
         
 
         
@@ -380,8 +368,63 @@ body {
     }
 }
 .budget{
+
+    .products{
+        padding-left: 25px;
+        margin-bottom: 100px;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        column-gap: 20px;
+    }
+    position: relative;
     .arrow{
         @include Product-arrow;
+        right: -1%;
+        top: 62%;
+    
+    }
+    .title-top{
+        padding-top: 7px;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 156px;
+        align-items: unset;
+        h4{
+            padding-top: 14px;
+        }
+        
+    }
+    h4{
+        padding-bottom: 23px;
+    }
+    .diapazon{
+        padding-top: 23px;
+    }
+    .sell__btn{
+        max-width: 151px;
+    }
+    .price-input{
+        margin-bottom: 5px;
+    }
+    &__filter-inner{
+        max-width: 420px;
+        column-gap: 37px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__filter{
+        max-width: 230px
+    }
+    &__border{
+        position: absolute;
+        top: 0;
+        z-index: -1
+        ;
+        img{
+
+        }
     }
 }
 .stock{
@@ -1098,7 +1141,7 @@ body {
     &__title {
         font-size: 40px;
         line-height: 53.72px;
-        letter-spacing: -2%;
+        letter-spacing: 0.02em;
         padding-bottom: 40px;
         text-align: center;
         font-family: "Ruberoid";
@@ -1122,14 +1165,15 @@ body {
     &__number {
         font-size: 65.1px;
         line-height: 90.23px;
-        letter-spacing: -2%;
+        letter-spacing: 0.02em;
         font-family: "Ruberoid";
+        font-weight: 700;
         color: rgba(214, 214, 214, 1);
     }
     &__text {
         font-size: 28px;
         line-height: 37.6px;
-        letter-spacing: -2%;
+        letter-spacing: 0.02em;
         font-family: "Ruberoid";
     }
     &__info {
@@ -1168,7 +1212,7 @@ body {
         &-question {
             font-size: 20px;
             line-height: 24.2px;
-            letter-spacing: -2%;
+            letter-spacing: 0.02em;
         }
         &-answer {
             padding-top: 18px;
@@ -1204,7 +1248,7 @@ body {
     &__text {
         font-size: 14px;
         line-height: 16.94px;
-        letter-spacing: -2%;
+        letter-spacing: 0.02em;
         color: rgba(173, 173, 173, 1);
         max-width: 383px;
         text-align: center;
@@ -1667,7 +1711,7 @@ body {
     z-index: -1;
 }
 .slider-header{
-    
+    min-height: 674px;
     position: absolute;
   left: 0px;
   top: 0px;
@@ -1682,27 +1726,31 @@ body {
   transition: opacity 1s;
 
   &:nth-child(1){
-    background-image: url(img/main.png);
+    background-image: url(img/main-banner.jpg);
     background-size: cover;
+    background-position-y: -150px;
     background-repeat: no-repeat;
     
   }
   &:nth-child(2){
-    background-image: url(img/main1.png);
+    background-image:url(img/main-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -150px;
 
   }
   &:nth-child(3){
-    background-image: url(img/main.png);
+    background-image: url(img/main-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -150px;
 
   }
   &:nth-child(4){
-    background-image: url(img/main1.png);
+    background-image: url(img/main-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -150px;
   }
 
 }
@@ -1714,10 +1762,24 @@ body {
 
 
   .slick-line{
+    width: 100%;
     display: flex;
     column-gap: 9px;
     padding-bottom: 24px;
+    padding: 112px 0 62px 0;
     justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 96.87%);
+    &::after{
+        content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    }
     &__item{
 
         display: block;
@@ -1809,13 +1871,11 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* HEADER */
 
-.header {
-    &__bottom {
+.header__dealer {
+    .header__bottom {
         padding: 109.02px 0 17.92px 0;
     }
-    &__dealer {
         background: $color_bl;
-    }
 }
 .dealer-history {
     .section-title {
@@ -1871,6 +1931,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
     &__title {
         line-height: 27.42px;
+        letter-spacing: -0.02em;
         padding-bottom: 25px;
     }
     &__img {
@@ -2666,5 +2727,297 @@ input[type="range"]::-webkit-slider-thumb {
                 }
             }
         }
+    }
+}
+
+/* ERROR */
+
+.error {
+    .card__info-buttons-btn {
+        max-width: 120px;
+        white-space: nowrap;
+    }
+    .sell__btn {
+        max-width: 155px;
+    }
+    &__inner {
+        padding: 132.1px 0 127.5px 0;
+        text-align: center;
+    }
+    &__title {
+        font-size: 187.67px;
+        line-height: 187.67px;
+        font-family: "Ruberoid";
+        font-weight: 800;
+        color: rgba(40, 40, 40, 1);
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 20px;
+        font-family: "Ruberoid";
+        font-weight: 800;
+        text-transform: uppercase;
+        padding-bottom: 53px;
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {                                     // container
+        width: 412px;
+    }
+    .header__dealer {                                // dealer
+        &__bottom-dealer {
+            max-width: 409px;
+        }
+        .header__bottom {
+            padding: 150.1px 0 20.36px 0;
+        }
+        .nav {
+            display: none;
+        }
+    }
+    .dealer-history {
+        .section-title {
+            padding-top: 32px;
+            padding-bottom: 20px;
+            font-size: 27px;
+            line-height: 36px;
+            letter-spacing: -0.01em;
+        }
+        &__inner {
+            display: block;
+            column-gap: 0;
+            padding: 12px 0 0 0;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 21.26px;
+            letter-spacing: -0.01em;
+            padding-bottom: 20px;
+        }
+        &__description:last-child {
+            padding-bottom: 0;
+        }
+    }
+    .dealer-about {
+        .section-title {
+            margin-bottom: 30px;
+        }
+        &__img {
+            display: none;
+        }
+        &__inner {
+            font-size: 16px;
+            line-height: 21.26px;
+            letter-spacing: -0.01em;
+            padding: 33px 0 22px 0;
+        }
+        &__dealer {
+            max-width: 409px;
+            padding-bottom: 30px;
+        }
+        &__team {
+            max-width: 409px;
+            position: absolute;
+            top: 305px;
+        }
+        &__assortment {
+            max-width: 409px;
+            padding-top: 301px;
+        }
+        &__title {
+            line-height: 21.94px;
+            padding-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+        &__img {
+            position: absolute;
+            top: 142px;
+            left: 372px;
+            z-index: -1;
+        }
+    }
+
+
+
+    .footer {                                                     // footer
+        border-top: 1px solid rgba(235, 235, 235, 1);
+        &__info {
+            padding-top: 76px;
+        }
+        &__top {
+            display: block;
+            justify-content: space-between;
+            padding-bottom: 58px;
+        }
+        &__description {
+            max-width: 394px;
+        }
+        &__text {
+            letter-spacing: 0.01em;
+            padding: 22.45px 0 35px 0;
+        }
+        &__nav {
+            display: block;
+        }
+        &__item {
+            &-title {
+                letter-spacing: 0.01em;
+            }
+        }
+        &__list:nth-child(1) {
+            margin-right: 0;
+        }
+        &__list:nth-child(2) {
+            margin-right: 0;
+        }
+        &__bottom-nav {
+            display: block;
+            padding: 27px 0 16px 0;
+        }
+        &__bottom-item {
+            font-size: 16px;
+            line-height: 19.36px;
+            color: rgba(114, 114, 114, 1);
+        }
+    }
+
+
+    .header {                                                     // consignment
+        &__consignment {
+            .header__category-bottom {
+                padding: 27.1px 0 15px 0;
+                border-bottom: 1px solid rgba(235, 235, 235, 1);
+            }
+            .header__categories {
+                color: rgba(0, 0, 0, 1);
+            }
+            .header__category-title {
+                background: linear-gradient(91.1deg, #000000 0.09%, #FFFFFF 170.35%);
+                color: transparent;
+                background-clip: text;
+                font-size: 29.39px;
+                line-height: 29.39px;
+            }
+            .nav {
+                display: none;
+            }
+            background:#fff;
+        }
+    }
+    .consignment {
+        .requests__title {
+            font-size: 27px;
+            line-height: 36px;
+            padding-bottom: 10px;
+        }
+        .requests__text {
+            color: rgba(123, 123, 123, 1);
+        }
+        &__photo {
+            max-width: 132px;
+        }
+        &__info {
+            text-align: left;
+            padding: 30px 0 30px 0;
+        }
+        &__photos {
+            padding-bottom: 30px;
+        }
+    }
+    .guide {
+        &__title {
+            font-size: 27px;
+            line-height: 36px;
+            padding-bottom: 16px;
+            text-align: left;
+            &-form {
+                padding-bottom: 21px;
+                max-width: 849px;
+            }
+        }
+        &__block {
+            margin-bottom: 10px;
+        }
+        &__column {
+            display: block;
+            padding-bottom: 0;
+        }
+        &__column:nth-child(3) {
+            padding-bottom: 0;
+        }
+        &__block-seven {
+            display: flex;
+            justify-content: center;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 26.86px;
+            max-width: 308px;
+        }
+        &__info {
+            padding: 0px 0 20px 20px;
+            width: 410px;
+            height: 128px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__example {
+            display: none;
+        }
+    }
+    .questions {
+        &__info {
+            padding: 30px 0 15px 0;
+            text-align: left;
+        }
+        &__answer {
+            padding: 15px 55px 15px 20px;
+            border-radius: 13px;
+            margin-bottom: 5px;
+            position: relative;
+            &-plus {
+                position: absolute;
+                top: 25.5px;
+                right: 20px;
+            }
+            &-question {
+                font-size: 16px;
+                line-height: 19.36px;
+            }
+            &-answer {
+                padding-top: 18px;
+                &--display {
+                    display: none;
+                }
+            }
+            max-width: 409px;
+        }
+        &__answer:last-child {
+            margin-bottom: 42px;
+        }
+    }
+    .guide__title-form {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .form {
+        &__inner {
+            padding-bottom: 28px;
+        }
+        &__text {
+            max-width: 380px;
+            padding-top: 10px;
+        }
+    }
+    .univer__btn {
+            width: 412px;
     }
 }

@@ -61,6 +61,7 @@
                         <div class="header__discount">скидки до 90%!</div>
                     </div>
                 </div>
+            </div>
                 <ul class="slick-line"  >
                     <li class="slick-line__item" >
                         
@@ -76,7 +77,7 @@
                     </li>
                 </ul>
                 
-            </div>
+            
             </div>
     </header>
 
@@ -376,10 +377,39 @@
         <div class="container">
             <div class="title-top">
                 <h2 class="section-title">Подберём пару по бюджету</h2>
+                <div class="budget__filter-inner">
+                    <div class="budget__filter">
+                        <h4>Цена</h4>
+                        <div class="slider">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="100000" value="32780" step="10">
+                            <input type="range" class="range-max" min="0" max="100000" value="82780" step="10">
+                          </div>
+                    <div class="diapazon">
+                        <div class="price-input">
+                            <div class="field">
+                              
+                              <input type="number" class="input-min" value="32780">
+                            </div>
+                            <div class="separator"></div>
+                            <div class="field">
+                              
+                              <input type="number" class="input-max" value="82780">
+                            </div>
+                          </div>
+                          
+                    </div>
+                    </div>
+                    <button class="sell__btn sell__btn-create">Подобрать</button>
+                    
+                </div>
+               
             </div>
-
+            <div class="arrow"><img src="icons/right.svg" alt=""></div>
             <div class="products">
-                <div class="arrow"><img src="icons/right.svg" alt=""></div>
+                
                 <div class="products__product">
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
@@ -414,7 +444,11 @@
                 </div>
                 
             </div>
+            <div class="budget__border">
+                <img src="img/border.png" alt="">
+            </div>
         </div>
+        
     </section>
 
     <section class="special">
@@ -574,5 +608,6 @@
             </div>
     </footer>
     <script src="script.js"></script>
+    <script src="diapazon.js"></script>
 </body>
 </html>
