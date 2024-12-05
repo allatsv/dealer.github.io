@@ -196,6 +196,7 @@ body {
   font-size: 12.25px;
   line-height: 14.82px;
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 /* STORIES */
@@ -216,6 +217,8 @@ body {
   border: 3px solid #fff;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .stories__link {
   background: black;
@@ -397,8 +400,9 @@ body {
 .budget__border {
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: 1;
 }
+
 .stock .arrow {
   position: absolute;
   right: -14.5px;
@@ -687,6 +691,8 @@ body {
   font-size: 13.2px;
   line-height: 15.98px;
   color: rgb(255, 255, 255);
+  padding: 20px 40px;
+  white-space: nowrap;
   height: 56px;
   width: 143px;
   border-radius: 13px;
@@ -700,6 +706,8 @@ body {
 }
 .discount__inner {
   background: url(img/discount.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 13px;
 }
 .discount__info {
@@ -785,6 +793,9 @@ body {
   display: flex;
   font-size: 16px;
   line-height: 19.36px;
+}
+.footer__link {
+  padding-bottom: 10px;
 }
 .footer__item-title {
   font-size: 22.89px;
@@ -1151,6 +1162,8 @@ body {
        column-gap: 28px;
   font-size: 13px;
   line-height: 15.73px;
+  text-decoration: underline;
+  color: rgb(77, 77, 77);
 }
 
 /* QUESTIONS */
@@ -1400,6 +1413,7 @@ body {
   font-size: 18.5px;
   line-height: 22.39px;
   color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .sell__btn-create {
@@ -1877,6 +1891,52 @@ input[type=range]::-webkit-slider-thumb {
 
 /* ORDER */
 /* HEADER */
+.make-order__way {
+  display: flex;
+}
+.make-order__way-text {
+  white-space: nowrap;
+}
+
+.make-order__way-span {
+  padding-left: 6px;
+  font-size: 17px;
+  line-height: 20.57px;
+  letter-spacing: -0.02em;
+}
+
+.make-order__way-input {
+  display: none;
+}
+
+.click {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 0.3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  position: relative;
+}
+
+.click::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.make-order__way-input:checked + .click::before {
+  opacity: 1;
+}
+
 .header__order .nav__item {
   color: rgb(0, 0, 0);
 }
@@ -1988,21 +2048,30 @@ input[type=range]::-webkit-slider-thumb {
   background-color: rgb(245, 245, 245);
   border-radius: 9.96px;
   max-width: 488px;
+  max-height: 232.89px;
 }
 .make-order__card-img {
   padding: 31.79px 0;
   background-color: rgb(255, 255, 255);
+  border: 0.77px solid rgb(214, 214, 214);
+  border-radius: 9.96px;
+  max-width: 217.57px;
+  max-height: 202.25px;
 }
 .make-order__card-title {
   display: flex;
   justify-content: space-between;
-  align-items: first baseline;
+  align-items: center;
   padding-bottom: 15.32px;
+}
+.make-order__card-title-img {
+  width: 22.98px;
 }
 .make-order__card-title-text {
   font-size: 15.32px;
   line-height: 18.54px;
   color: rgb(0, 0, 0);
+  max-width: 141px;
 }
 .make-order__card-title-text span {
   font-weight: 800;
@@ -2019,6 +2088,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 13.79px;
   line-height: 18.7px;
   font-family: "Ruberoid";
+  font-weight: 600;
   color: rgb(0, 0, 0);
 }
 .make-order__card-total {
@@ -2030,6 +2100,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 20.55px;
   line-height: 27.86px;
   font-family: "Ruberoid";
+  font-weight: 600;
   color: rgb(62, 62, 62);
 }
 .make-order__card-total-img {
@@ -2334,6 +2405,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .track__go-btn {
   font-size: 20px;
+  padding: 20px 40px;
   line-height: 24.2px;
   letter-spacing: -0.02em;
   background-color: rgb(0, 0, 0);
@@ -2620,8 +2692,9 @@ input[type=range]::-webkit-slider-thumb {
   color: rgb(101, 101, 101);
   padding-top: 25.5px;
 }
-.card__info-guarantee-text-text span {
-  text-decoration: underline;
+.card__info-guarantee-text-span {
+  color: rgb(101, 101, 101);
+  text-decoration: underline !important;
 }
 .card__info-guarantee-text-display {
   display: none;

@@ -12,16 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header">                                           <!---->
         <div class="container">
             <div class="header__guarantee">
                 <button class="header__guarantee-btn">
-                    <img src="/icons/left.svg" alt="" class="header__guarantee-img">
+                    <img src="/icons/left.svg" alt="arrow" class="header__guarantee-img">
                 </button>
                 <p class="header__guarantee-text">Гарантия лучшей цены</p>
-                <button class="header__guarantee-btn">
-                    <img src="/icons/right.svg" alt="" class="header__guarantee-img">
-                </button>
+                <a href="category.html" class="header__guarantee-btn">
+                    <img src="/icons/right.svg" alt="arrow" class="header__guarantee-img">
+                </a>
             </div>
         </div>
 
@@ -39,18 +39,18 @@
                 <div class="header__top">
                     <nav class="nav">
                         <ul class="nav__list">
-                            <li><a href="#" class="nav__item">Одежда</a></li>
-                            <li><a href="#" class="nav__item">Обувь</a></li>
-                            <li><a href="#" class="nav__item">Аксессуары</a></li>
-                            <li><a href="#" class="nav__item">Сумки</a></li>
-                            <li><a href="#" class="nav__item">Товары для спорта</a></li>
+                            <li><a href="category.html" class="nav__item">Одежда</a></li>
+                            <li><a href="category.html" class="nav__item">Обувь</a></li>
+                            <li><a href="category.html" class="nav__item">Аксессуары</a></li>
+                            <li><a href="category.html" class="nav__item">Сумки</a></li>
+                            <li><a href="category.html" class="nav__item">Товары для спорта</a></li>
                         </ul>
                     </nav>
-                        <img src="/icons/logo.svg" alt="" class="logo">
+                        <a href="index.html"><img src="/icons/logo.svg" alt="logo" class="logo"></a>                                           <!---->
                         <div class="header__icons">
-                            <img src="/icons/like-header.svg" alt="" class="header__icons-icon">
-                            <img src="/icons/cart.svg" alt="" class="header__icons-icon">
-                            <img src="/icons/search.svg" alt="" class="header__icons-icon">
+                            <img src="/icons/like-header.svg" alt="like" class="header__icons-icon">
+                            <img src="/icons/cart.svg" alt="cart" class="header__icons-icon">
+                            <img src="/icons/search.svg" alt="search" class="header__icons-icon">
                         </div>
                 </div>
                 <div class="header__bottom">
@@ -81,31 +81,31 @@
             </div>
     </header>
 
-    <div class="stories">
+    <div class="stories">                                           <!---->
         <div class="container">
             <div class="stories__inner">
-                <div class="stories__item">
-                    <a class="stories__link" href="#"><img class="stories__img" src="img/story1.jpeg" alt=""></a>
+                <div class="stories__item"> <!-- LINK -->
+                    <a class="stories__link" href="story"><img class="stories__img" src="img/story1.jpeg" alt=""></a>
                     <span class="stories__item--title">покупка</span>
                 </div>
                 <div class="stories__item">
-                    <a class="stories__link" href="#"><img class="stories__img" src="img/story2.jpeg" alt=""></a>
+                    <a class="stories__link" href="story"><img class="stories__img" src="img/story2.jpeg" alt=""></a>
                     <span class="stories__item--title">доставка</span>
                 </div>
                 <div class="stories__item">
-                    <a class="stories__link" href="#"><img class="stories__img"  src="img/story3.jpeg" alt=""></a>
+                    <a class="stories__link" href="story"><img class="stories__img"  src="img/story3.jpeg" alt=""></a>
                     <span class="stories__item--title">pre-loved</span>
                 </div>
                 <div class="stories__item">
-                    <a class="stories__link" href="#"><img class="stories__img"  src="img/story4.jpeg" alt=""></a>
+                    <a class="stories__link" href="story"><img class="stories__img"  src="img/story4.jpeg" alt=""></a>
                     <span class="stories__item--title">custom</span>
                 </div>
                 <div class="stories__item">
-                    <a class="stories__link" href="#"><img class="stories__img"  src="img/story5.jpeg" alt=""></a>
+                    <a class="stories__link" href="story"><img class="stories__img"  src="img/story5.jpeg" alt=""></a>
                     <span class="stories__item--title">custom</span>
                 </div>
                 <div class="stories__item">
-                    <a class="stories__link" href="#"><img class="stories__img" src="img/story6.jpeg" alt=""></a>
+                    <a class="stories__link" href="story"><img class="stories__img" src="img/story6.jpeg" alt=""></a>
                     <span class="stories__item--title">консьерж</span>
                 </div>
             </div>
@@ -119,16 +119,16 @@
         <div class="container">
             <div class="title-top">
                 <h2 class="section-title">Cамое популярное сейчас</h2>
-                <a class=" title-top-btn">Перейти</a>
+                <a href="category.html" class=" title-top-btn">Перейти</a>
             </div>
 
             <div class="products">
-                <div class="arrow"><img src="icons/right.svg" alt=""></div>
+                <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
                 <div class="products__product">
                     <div class="hot">hot</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -137,7 +137,7 @@
                     <div class="hot">hot</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -146,7 +146,7 @@
                     <div class="hot">hot</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -156,7 +156,7 @@
                     
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -170,16 +170,16 @@
         <div class="container">
             <div class="title-top">
                 <h2 class="section-title">Новинки</h2>
-                <a class=" title-top-btn">Перейти</a>
+                <a href="category.html" class=" title-top-btn">Перейти</a>
             </div>
 
             <div class="products">
-                <div class="arrow"><img src="icons/right.svg" alt=""></div>
+                <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
                 <div class="products__product">
                     <div class="pre-loved">pre-loved</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -189,7 +189,7 @@
                     <div class="new-icon">new</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt=""></a> 
+                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -198,7 +198,7 @@
                     <div class="discont">-40%</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -207,7 +207,7 @@
                     
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt=""></a>
+                        <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt="product"></a>
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -222,7 +222,7 @@
             <div class="categories-inner">
                 <a class="categories-link" href="#">
                     <div class="category">
-                        <img class="category__img" src="img/cat1.png" alt="">
+                        <img class="category__img" src="img/cat1.png" alt="clothes">
                         <h3 class="category__title">одежда</h3>
                     </div>
     
@@ -231,7 +231,7 @@
     
                 <a class="categories-link" href="#">
                     <div class="category">
-                        <img class="category__img" src="img/cat2.png" alt="">
+                        <img class="category__img" src="img/cat2.png" alt="shoes">
                         <h3 class="category__title">Обувь</h3>
                     </div>
     
@@ -240,21 +240,21 @@
                 <div class="category-inner">
                     <a class="categories-link" href="#">
                         <div class="category">
-                            <img class="category__img" src="img/cat3.png" alt="аксессуары">
+                            <img class="category__img" src="img/cat3.png" alt="accessories">
                             <h3 class="category__title">аксессуары</h3>
                         </div>
         
                     </a>
                     <a class="categories-link" href="#">
                         <div class="category">
-                            <img class="category__img" src="img/cat4.png" alt="сумки">
+                            <img class="category__img" src="img/cat4.png" alt="bags">
                             <h3 class="category__title">сумки</h3>
                         </div>
         
                     </a>
                     <a class="categories-link" href="#">
                         <div class="category">
-                            <img class="category__img" src="img/cat5.png" alt="для спорта">
+                            <img class="category__img" src="img/cat5.png" alt="sports">
                             <h3 class="category__title">для спорта</h3>
                         </div>
         
@@ -270,16 +270,16 @@
         <div class="container">
             <div class="title-top">
                 <h2 class="section-title">Для вечерних прогулок</h2>
-                <a class=" title-top-btn">Перейти</a>
+                <a href="category.html" class=" title-top-btn">Перейти</a>
             </div>
 
             <div class="products">
-                <div class="arrow"><img src="icons/right.svg" alt=""></div>
+                <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
                 <div class="products__product">
                  
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -289,7 +289,7 @@
                 
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt=""></a> 
+                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -298,7 +298,7 @@
    
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -307,7 +307,7 @@
                     
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -325,9 +325,9 @@
             <div class="slider-block">
                 <div class="line"></div>
                 <div class="nike__title-inner">
-                    <div class="arrow"><img src="icons/left.svg" alt=""></div>
+                    <div class="arrow"><img src="icons/left.svg" alt="arrow"></div>
                     <h3 class="nike__title">NIKE</h3>
-                    <div class="arrow"><img src="icons/right.svg" alt=""></div>
+                    <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
                 </div>
                 
                 <div class="line"></div>
@@ -336,8 +336,8 @@
             <div class="nike__categories">
                 <a class="nike__categories-link" href="#">
                     <div class="nike__category">
-                        <div class="arrow"><img src="icons/right.svg" alt=""></div>
-                        <img class="nike__category-img" src="img/nikecat1.png" alt="">
+                        <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
+                        <img class="nike__category-img" src="img/nikecat1.png" alt="BredFrMixer">
                         <h3 class="nike__category-title">bred Fr <br> mixer </h3>
                     </div>
     
@@ -345,8 +345,8 @@
 
                 <a class="nike__categories-link " href="#">
                     <div class="nike__category">
-                        <div class="arrow"><img src="icons/right.svg" alt=""></div>
-                        <img class="nike__category-img" src="img/nikecat2.png" alt="">
+                        <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
+                        <img class="nike__category-img" src="img/nikecat2.png" alt="NikeAirJordan">
                         <h3 class="nike__category-title nike__category-title--2">nike air <br> jordan 1</h3>
                     </div>
     
@@ -354,8 +354,8 @@
 
                 <a class="nike__categories-link" href="#">
                     <div class="nike__category">
-                        <div class="arrow"><img src="icons/right.svg" alt=""></div>
-                        <img class="nike__category-img" src="img/nikecat3.png" alt="">
+                        <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
+                        <img class="nike__category-img" src="img/nikecat3.png" alt="NikeAirMaximus">
                         <h3 class="nike__category-title">nike air <br> Maximus</h3>
                     </div>
     
@@ -365,15 +365,15 @@
             <div class="nike__spec">
                 <div class="nike__spec-inner">
                     <h2 class="nike__spec-title">спецпредложения</h2>
-                    <img class="nike__spec-img" src="img/nikespec.png" alt="">
+                    <img class="nike__spec-img" src="img/nikespec.png" alt="background">
                     <h3 class="nike__spec-subtitle">Гарантия лучшей <br> цены</h3>
-                    <img class="nike__slide" src="icons/slidearrow.svg" alt="">
+                    <img class="nike__slide" src="icons/slidearrow.svg" alt="arrow">
                 </div>
             </div> 
         </div>
     </section>
 
-    <section class="budget">
+    <section class="budget">                                           <!---->
         <div class="container">
             <div class="title-top">
                 <h2 class="section-title">Подберём пару по бюджету</h2>
@@ -402,18 +402,18 @@
                           
                     </div>
                     </div>
-                    <button class="sell__btn sell__btn-create">Подобрать</button>
+                    <button class="sell__btn sell__btn-create">Подобрать</button>  <!---->
                     
                 </div>
                
             </div>
-            <div class="arrow"><img src="icons/right.svg" alt=""></div>
+            <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
             <div class="products">
                 
                 <div class="products__product">
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -421,7 +421,7 @@
                 <div class="products__product">
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt=""></a> 
+                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -429,7 +429,7 @@
                 <div class="products__product">
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -437,7 +437,7 @@
                 <div class="products__product">
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -445,7 +445,7 @@
                 
             </div>
             <div class="budget__border">
-                <img src="img/border.png" alt="">
+                <img src="img/border.png" alt="border">
             </div>
         </div>
         
@@ -459,14 +459,14 @@
                 <div class="special__info">
                     <p class="special__text">закастомизируем ваш гардероб</p>
                     <h3 class="special__title">dealer<span>.</span>custom</h3>
-                    <p><a href="#" class="special__go">смотреть</a></p>
+                    <p><a href="custom.html" class="special__go">смотреть</a></p>
                 </div>
             </div>
             <div class="special__block">
                 <div class="special__info special__info-right">
                     <p class="special__text">для тех, кто ценит<br>осознанное потребление</p>
                     <h3 class="special__title">pre-loved by dealer</h3>
-                    <p><a href="#" class="special__go">смотреть</a></p>
+                    <p><a href="preloved.html" class="special__go">смотреть</a></p>
                 </div>
             </div>
         </div>
@@ -477,16 +477,16 @@
         <div class="container">
             <div class="stock-top">
                 <h2 class="section-title">В наличии</h2>
-                <a class=" title-top-btn">Перейти</a>
+                <a href="category.html" class=" title-top-btn">Перейти</a>
             </div>
 
             <div class="products">
-                <div class="arrow"><img src="icons/right.svg" alt=""></div>
+                <div class="arrow"><img src="icons/right.svg" alt="arrow"></div>
                 <div class="products__product">
                     <div class="hot">new</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes3.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -495,7 +495,7 @@
                     <div class="hot">new</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt=""></a> 
+                        <a href="products__product-link"><img  class="products__product-img"  src="img/shoes.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -504,7 +504,7 @@
                     <div class="hot">new</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/shoes2.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -513,7 +513,7 @@
                     <div class="hot">new</div>
                     <img class="like" src="icons/like.svg" alt="like">
                     <div class="products__product-inner">
-                        <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt=""></a> 
+                        <a href="products__product-link"><img class="products__product-img" src="img/bag.png" alt="product"></a> 
                         <h3 class="products__product-name">Сумка <span>Jacquemus</span><br>  Le Bambidou</h3>
                         <span class="products__product-price">21 999₽</span>
                     </div>
@@ -530,7 +530,7 @@
                 <h3 class="sell__title">Продай свою пару
                     вместе с нами</h3>
                 <p class="sell__text">Реализуем позиции, <span>которые потеряли актуальность в вашем гардеробе</span></p>
-                <button class="sell__btn">В каталог</button>
+                <a href="consignment.html"><p class="sell__btn">В каталог</p></a>
             </div>
         </div>
         </div>
@@ -551,44 +551,44 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer">              <!---->
         <div class="container">
             <div class="footer__info">
                 <div class="footer__top">
                     <div class="footer__description">
-                        <img src="/icons/logo-footer.svg" alt="" class="logo">
+                        <a href="index.html"><img src="/icons/logo-footer.svg" alt="logo" class="logo"></a> <!---->
                         <p class="footer__text">Ваш поставщик в мир лимитированного ассортимента с доставкой по всему миру</p>
                         <div class="footer__social">
-                            <img src="/icons/telegram.svg" alt="" class="footer__social-item">
-                            <img src="/icons/vk.svg" alt="" class="footer__social-item">
+                            <img src="/icons/telegram.svg" alt="telegram" class="footer__social-item">
+                            <img src="/icons/vk.svg" alt="vk" class="footer__social-item">
                         </div>
                     </div>
 
                     <div class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item footer__item-title">Каталог</li>
-                            <li><a href="#" class="footer__item">Одежда</a></li>
-                            <li><a href="#" class="footer__item">Обувь</a></li>
-                            <li><a href="#" class="footer__item">Аксессуары</a></li>
-                            <li><a href="#" class="footer__item">Сумки</a></li>
-                            <li><a href="#" class="footer__item">Товары для спорта</a></li>
-                            <li><a href="#" class="footer__item">Pre-loved</a></li>
-                            <li><a href="#" class="footer__item">Custom</a></li>
+                            <li class="footer__link"><a href="category.html" class="footer__item">Одежда</a></li>
+                            <li class="footer__link"><a href="category.html" class="footer__item">Обувь</a></li>
+                            <li class="footer__link"><a href="category.html" class="footer__item">Аксессуары</a></li>
+                            <li class="footer__link"><a href="category.html" class="footer__item">Сумки</a></li>
+                            <li class="footer__link"><a href="category.html" class="footer__item">Товары для спорта</a></li>
+                            <li class="footer__link"><a href="preloved.html" class="footer__item">Pre-loved</a></li>
+                            <li><a href="custom.html" class="footer__item">Custom</a></li>
                         </ul>
                         <ul class="footer__list">
                             <li class="footer__item footer__item-title">Меню</li>
-                            <li><a href="#" class="footer__item">О нас</a></li>
-                            <li><a href="#" class="footer__item">Продать свою одежду</a></li>
-                            <li><a href="#" class="footer__item">Консьерж</a></li>
-                            <li><a href="#" class="footer__item">Клиентский сервис</a></li>
+                            <li class="footer__link"><a href="dealer.html" class="footer__item">О нас</a></li>
+                            <li class="footer__link"><a href="consignment.html" class="footer__item">Продать свою одежду</a></li>
+                            <li class="footer__link"><a href="concierge.html" class="footer__item">Консьерж</a></li>
+                            <li><a href="client.html" class="footer__item">Клиентский сервис</a></li>
                         </ul>
                         <ul class="footer__list">
                             <li class="footer__item footer__item-title">Поддержка</li>
-                            <li><a href="#" class="footer__item">Доставка</a></li>
-                            <li><a href="#" class="footer__item">Оплата</a></li>
-                            <li><a href="#" class="footer__item">Частые вопросы</a></li>
-                            <li><a href="#" class="footer__item">Клиентский сервис</a></li>
-                            <li><a href="#" class="footer__item">Отследить заказ</a></li>
+                            <li class="footer__link"><a href="#" class="footer__item">Доставка</a></li>
+                            <li class="footer__link"><a href="#" class="footer__item">Оплата</a></li>
+                            <li class="footer__link"><a href="client.html" class="footer__item">Частые вопросы</a></li>
+                            <li class="footer__link"><a href="client.html" class="footer__item">Клиентский сервис</a></li>
+                            <li><a href="track.html" class="footer__item">Отследить заказ</a></li>
                         </ul>
                     </div>
                 </div>

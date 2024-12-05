@@ -233,6 +233,7 @@ body {
     font-size: 12.25px;
     line-height: 14.82px;
     letter-spacing: 0.01em;
+    white-space: nowrap;
 }
 
 /* STORIES */
@@ -252,6 +253,7 @@ body {
         border: 3px solid #fff;
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
     &__link{
         background: black;
@@ -420,11 +422,7 @@ body {
     &__border{
         position: absolute;
         top: 0;
-        z-index: -1
-        ;
-        img{
-
-        }
+        z-index: 1;
     }
 }
 .stock{
@@ -703,6 +701,8 @@ body {
         font-size: 13.2px;
         line-height: 15.98px;
         color: $color_wh;
+        padding: 20px 40px;
+        white-space: nowrap;
         height: 56px;
         width: 143px;
         border-radius: 13px;
@@ -717,6 +717,8 @@ body {
     padding-bottom: 101px;
     &__inner {
         background: url(img/discount.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 13px;
     }
     &__info {
@@ -796,6 +798,9 @@ body {
         display: flex;
         font-size: 16px;
         line-height: 19.36px;
+    }
+    &__link {
+        padding-bottom: 10px;
     }
     &__item {
         &-title {
@@ -1191,6 +1196,8 @@ body {
         column-gap: 28px;
         font-size: 13px;
         line-height: 15.73px;
+        text-decoration: underline;
+        color: rgba(77, 77, 77, 1);
     }
 }
 
@@ -1447,6 +1454,7 @@ body {
         font-size: 18.5px;
         line-height: 22.39px;
         color: $color_bl;
+        border-bottom: 1px solid $color_bl;
     }
 }
 .sell__btn-create {
@@ -1945,7 +1953,46 @@ input[type="range"]::-webkit-slider-thumb {
 /* ORDER */
 
 /* HEADER */
-
+.make-order__way {
+    display: flex;
+    &-text {
+        white-space: nowrap;
+    }
+}
+.make-order__way-span {
+    padding-left: 6px;
+    font-size: 17px;
+    line-height: 20.57px;
+    letter-spacing: -0.02em;
+}
+.make-order__way-input {
+    display: none;
+}
+.click {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 0.3px solid $color_bl;
+    border-radius: 4px;
+    position: relative;
+}
+.click::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $color_bl;
+    border-radius: 3px;
+    opacity: 0;
+    transition: .2s;
+}
+.make-order__way-input:checked + .click::before {
+    opacity: 1;
+}
 .header__order {
     .nav__item {
         color: $color_bl;
@@ -2051,20 +2098,29 @@ input[type="range"]::-webkit-slider-thumb {
             background-color: rgba(245, 245, 245, 1);
             border-radius: 9.96px;
             max-width: 488px;
+            max-height: 232.89px;;
         }
         &-img {
             padding: 31.79px 0;
             background-color: $color_wh;
+            border: 0.77px solid rgba(214, 214, 214, 1);
+            border-radius: 9.96px;
+            max-width: 217.57px;
+            max-height: 202.25px;
         }
         &-title {
             display: flex;
             justify-content: space-between;
-            align-items: first baseline;
+            align-items: center;
             padding-bottom: 15.32px;
+            &-img {
+                width: 22.98px;
+            }
             &-text {
                 font-size: 15.32px;
                 line-height: 18.54px;
                 color: $color_bl;
+                max-width: 141px;
             }
             &-text span {
                 font-weight: 800;
@@ -2081,6 +2137,7 @@ input[type="range"]::-webkit-slider-thumb {
                 font-size: 13.79px;
                 line-height: 18.7px;
                 font-family: "Ruberoid";
+                font-weight: 600;
                 color: $color_bl;
             }
         }
@@ -2092,6 +2149,7 @@ input[type="range"]::-webkit-slider-thumb {
                 font-size: 20.55px;
                 line-height: 27.86px;
                 font-family: "Ruberoid";
+                font-weight: 600;
                 color: rgba(62, 62, 62, 1);
             }
             &-img {
@@ -2402,6 +2460,7 @@ input[type="range"]::-webkit-slider-thumb {
         }
         &-btn {
             font-size: 20px;
+            padding: 20px 40px;
             line-height: 24.2px;
             letter-spacing: -0.02em;
             background-color: $color_bl;
@@ -2693,8 +2752,9 @@ input[type="range"]::-webkit-slider-thumb {
                 line-height: 16.94px;
                 color: rgba(101, 101, 101, 1);
                 padding-top: 25.5px;
-                &-text span {
-                    text-decoration: underline;
+                &-span {
+                    color: rgba(101, 101, 101, 1);
+                    text-decoration: underline !important;
                 }
                 &-display {
                     display: none;
