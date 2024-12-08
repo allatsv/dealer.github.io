@@ -402,9 +402,6 @@ body {
     .diapazon{
         padding-top: 23px;
     }
-    .sell__btn{
-        max-width: 151px;
-    }
     .price-input{
         margin-bottom: 5px;
     }
@@ -1457,11 +1454,6 @@ body {
         border-bottom: 1px solid $color_bl;
     }
 }
-.sell__btn-create {
-    width: 284px;
-    height: 56px;
-    color: rgba(233, 233, 233, 1);
-}
 
 /* PRELOVED */
 
@@ -1958,6 +1950,10 @@ input[type="range"]::-webkit-slider-thumb {
     &-text {
         white-space: nowrap;
     }
+}
+
+.block-none{
+    display: none;
 }
 .make-order__way-span {
     padding-left: 6px;
@@ -3665,12 +3661,6 @@ input[type="range"]::-webkit-slider-thumb {
             padding-bottom: 51px;
         }
     }
-    .sell__btn-create {
-        width: 412px;
-        height: 56px;
-        color: rgba(233, 233, 233, 1);
-        background: rgba(34, 34, 34, 1);
-    }
 
 
 
@@ -3747,4 +3737,219 @@ input[type="range"]::-webkit-slider-thumb {
             max-width: 410px;
         }
     }
+    .title-top{
+        display: block;
+        margin-bottom: 13px;
+        margin-top: 0px;
+        a{
+            display: none;
+    }}
+    .section-title{
+        font-size: 27.53px;
+        line-height: 36.97px;
+        letter-spacing:-0.01em; 
+
+    }
+    .hot, .pre-loved, .discont,.new-icon {
+        max-width: 40px;
+        font-size: 9px;
+        line-height: 11px;
+        letter-spacing:-0.01em; 
+        padding: 7px 10.39px;
+        border-radius: 8.95px;
+        top: 8px;
+        left: 12.26px;
+    }
+    .pre-loved{
+        max-width: 73.65px;
+    }
+    .like {
+        position: absolute;
+        top: 15.1px;
+        right: 12.26px;
+    }
+    .products{
+        &__product-inner{
+            padding: 30px 15px 8px 15px;
+        }
+    }
+    .popular .arrow,.new .arrow,.walk .arrow,.stock .arrow {
+        right: -9.5px;
+        top: 44%;
+    }
+    .popular {
+        margin-bottom: 39px;
+    }
+    .block{
+        display: block;
+    }
+    .category{
+        padding-bottom: 10.57px;
+        &__title{
+            font-size: 20.89px;
+            position: absolute;
+            bottom: 19.03px;
+            left: 15.67px;
+     
+            font-weight: 500;
+            line-height: 25.28px;
+            letter-spacing: -0.01em;
+        }
+        &-inner{
+            display: none;
+        }
+        &__img{
+            max-width: 200px;
+        }
+    }
+ 
+    .new {
+        margin-bottom: 42px;
+    }
+    .categories {
+        margin-bottom: 51.57px;
+        &-inner{
+            flex-wrap: wrap;
+            column-gap: 10.57px;
+        }
+    }
+    .walk{
+        padding-bottom: 42px;
+    }
+    .nike{
+
+        .arrow{
+            display: none;
+        }
+        &__pre-title{
+            font-size: 27.53px;
+            line-height: 36.97px;
+            letter-spacing: -0.01em;
+        }
+        &__title{
+            padding: 0px 26px;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48.48px;
+            letter-spacing: -0.01em;
+
+        }
+        &__categories{
+            margin-top: 13px;
+        }
+    }
+}
+
+/* FORM */
+.block{
+    display: block;
+}
+.form {
+    &-open {
+        opacity: 1;
+        visibility: visible;
+    }
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__info {
+        background-color: rgba(240, 240, 240, 1);
+        border-radius: 13px;
+        padding: 23px 26px 30px 53px;
+        max-width: 544px;
+        max-height: 678px;
+    }
+    &__close {
+        max-width: 17px;
+        float: right;
+    }
+    &__title {
+        font-size: 28px;
+        line-height: 37.6px;
+        letter-spacing: -0.02em;
+        font-family: "Ruberoid";
+        padding-bottom: 35px;
+    }
+    &__field {
+        &-text {
+            font-size: 17px;
+            line-height: 20.57px;
+            letter-spacing: -0.02em;
+            color: rgba(77, 77, 77, 1);
+            padding-bottom: 8px;
+            text-align: left;
+        }
+        &-input {
+            font-size: 17px;
+            line-height: 20.57px;
+            letter-spacing: -0.02em;
+            width: 438px;
+            height: 55px;
+            background-color: $color_wh;
+            border-radius: 100px;
+            border: 1px solid rgba(179, 179, 179, 1);
+            margin-bottom: 20px;
+        }
+        &-input::placeholder {
+            color: rgba(217, 217, 217, 1);
+            padding-left: 23px;
+        }
+    }
+    &__download {
+        position: relative;
+        padding-bottom: 37px;
+        &-img {
+            position: absolute;
+            top: 19px;
+            left: 115px;
+            height: 20px;
+            width: 21px;
+        }
+        &-btn {
+            font-size: 17px;
+            line-height: 20.57px;
+            letter-spacing: -0.02em;
+            color: rgba(77, 77, 77, 1);
+            background-color: rgba(213, 213, 213, 1);
+            border-radius: 100px;
+            padding-left: 66px;
+            padding-right: 40px;
+            width: 294px;
+            height: 61px;
+        }
+    }
+    &__button {
+        font-size: 13.2px;
+        line-height: 15.98px;
+        color: rgba(233, 233, 233, 1);
+        background-color: rgba(34, 34, 34, 1);
+        border-radius: 13px;
+        width: 284px;
+        height: 56px;
+    }
+    &__accept {
+        font-size: 14px;
+        line-height: 16.94px;
+        letter-spacing: -0.02em;
+        color: rgba(173, 173, 173, 1);
+        max-width: 380px;
+        padding-top: 18px;
+    }
+}
+.button-gradient {
+    font-size: 13.2px;
+    line-height: 15.98px;
+    color: rgba(233, 233, 233, 1);
+    width: 284px;
+    height: 56px;
+    border-radius: 13px;
+    background: linear-gradient(89.28deg, #090909 0.53%, #88837E 99.49%);
 }

@@ -11,3 +11,22 @@ function nextSlide(){
 
 
 
+const formBtns = document.querySelectorAll('.button-gradient');
+const body = document.querySelector('body');
+const form = document.querySelectorAll('.form');
+
+let unlock = true;
+
+const timeout = 800;
+
+if (formBtns.length > 0) {
+  for (let index = 0; index < formBtns.length; index++) {
+    const formBtn = formBtns[index];
+    formBtn.addEventListener("click", function () {
+      form.classList.add('form-open');
+    })
+  }
+}
+
+
+

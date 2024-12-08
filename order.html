@@ -71,17 +71,19 @@
                         <p class="make-order__way-text">Способ доставки</p>
                         <div class="make-order__way-flex">
                         <label class="make-order__way-label">
-                            <input type="checkbox" class="make-order__way-input">
+                            <input name="module" type="radio" class="make-order__way-input">
                             <span class="click"></span>
                             <span class="make-order__way-span">Курьер — 800 руб</span>
                         </label>
+                        <br>
                         <label class="make-order__way-label">
-                            <input type="checkbox" class="make-order__way-input">
+                            <input name="module" type="radio" class="make-order__way-input">
                             <span class="click"></span>
                             <span class="make-order__way-span">Самовывозом с магазина</span>
                         </label>
+                        <br>
                         <label class="make-order__way-label">
-                            <input type="checkbox" class="make-order__way-input">
+                            <input name="module" type="radio" class="make-order__way-input">
                             <span class="click"></span>
                             <span class="make-order__way-span">Пункт выдачи</span>
                         </label>
@@ -105,12 +107,13 @@
                         <p class="make-order__way-text">Способ оплаты</p>
                         <div class="make-order__way-flex">
                             <label class="make-order__way-label">
-                                <input type="checkbox" class="make-order__way-input">
+                                <input name="module1" type="radio"  type="checkbox" class="make-order__way-input">
                                 <span class="click"></span>
                                 <span class="make-order__way-span">Банковской картой</span>
                             </label>
+                            <br>
                             <label class="make-order__way-label">
-                                <input type="checkbox" class="make-order__way-input">
+                                <input name="module1" type="radio"  type="checkbox" class="make-order__way-input">
                                 <span class="click"></span>
                                 <span class="make-order__way-span">При получении картой или наличными</span>
                             </label>
@@ -146,7 +149,7 @@
                                     <p class="make-order__card-block-text">Red</p>
                                 </div>
                                 <div class="make-order__card-total">
-                                    <p class="make-order__card-total-number">21 999₽</p>
+                                    <p class="make-order__card-total-number"><span class="cost">21999</span> <span>₽</span></p>
                                     <img src="icons/clear.svg" alt="clear" class="make-order__card-total-img">
                                 </div>
                             </div>
@@ -172,7 +175,7 @@
                                     <p class="make-order__card-block-text">Red</p>
                                 </div>
                                 <div class="make-order__card-total">
-                                    <p class="make-order__card-total-number">21 999₽</p>
+                                    <p class="make-order__card-total-number"><span class="cost">21999</span> <span>₽</span></p>
                                     <img src="icons/clear.svg" alt="clear" class="make-order__card-total-img">
                                 </div>
                             </div>
@@ -183,7 +186,7 @@
                         <div class="make-order__making-flex">
                             <div class="make-order__making-cost">
                                 <p class="make-order__making-cost-text">Итого</p>
-                                <p class="make-order__making-cost-number">43 998₽</p>
+                                <p class="make-order__making-cost-number"><span class="costRes">43998</span> <span>₽</span></p>
                             </div>
                             <button class="univer__btn">Оформить</button> <!---->
                         </div>
@@ -268,5 +271,6 @@
                 </div>
             </div>
     </footer>
+    <script src="order.js"></script>
 </body>
 </html>
