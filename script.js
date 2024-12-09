@@ -30,3 +30,24 @@ if (formBtns.length > 0) {
 
 
 
+
+let menu = document.querySelector('.nav__list')
+let burger = document.querySelector('.burger')
+let categoriesList = document.querySelector('.categories-list')
+let arrowRight = document.querySelectorAll('.arrow-right')
+let arrowDown = document.querySelectorAll('.arrow-down')
+
+burger.addEventListener('click',function(){
+  menu.style.display =  menu.style.display === 'block' ? 'none' : 'block';
+})
+
+arrowRight.forEach(elem=>{
+  elem.addEventListener('click',function(){
+
+    elem.parentElement.nextElementSibling.style.display =  elem.parentElement.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+    elem.src =  elem.src  === 'icons/down.svg' ? 'icons/right.svg' : 'icons/down.svg' ;
+    console.log(elem.src)
+  })
+})
+
+
