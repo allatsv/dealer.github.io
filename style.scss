@@ -153,6 +153,9 @@ body {
 }
 
 .header {
+    .cart {
+        stroke-width: 10;
+    }
     &__guarantee {
         display: flex;
         justify-content: center;
@@ -3764,21 +3767,25 @@ input[type="range"]::-webkit-slider-thumb {
         }
     }
     .nav{
-        .arrow-down{
+        .arrow-down {
             display: none;
         }
-        .categories-list{
+        .categories-list {
             display: none;
             padding: 10px 0px 10px 15px;
+            border-bottom: 1px solid rgba(235, 235, 235, 1);
+            margin-bottom: 30px;
         }
-        .categories-thing{
+        .categories-thing {
             color: black;
             font-size: 16px;
             line-height: 21.26px;
             padding-bottom: 10px;
             position: relative;
             z-index: 200;
-
+        }
+        .categories-thing:last-child {
+            padding-bottom: 0;
         }
         position: relative;
         &__list{
@@ -3796,10 +3803,11 @@ input[type="range"]::-webkit-slider-thumb {
             padding: 38px 10px 10px 15px;
             border: 1px solid rgba(214, 214, 214, 1);
             background:linear-gradient(87.95deg, #FFFFFF 1.69%, #D6D6D6 100%);
- 
+            background: url(img/nav-shoe.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             }
         }
-     
         &__item{
             font-size: 20px;
             font-weight: 400;
@@ -4281,8 +4289,113 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 13.2px;
     line-height: 15.98px;
     color: rgba(233, 233, 233, 1);
-    width: 284px;
-    height: 56px;
     border-radius: 13px;
     background: linear-gradient(89.28deg, #090909 0.53%, #88837E 99.49%);
+}
+.button-white {
+    font-size: 13.2px;
+    line-height: 15.98px;
+    color: rgba(94, 94, 94, 1);
+    border-radius: 13px;
+    border: 1px solid rgba(179, 179, 179, 1);
+    background-color: $color_wh;
+}
+.nav-category {
+    .button-white {
+        padding: 19px 100.5px;
+    }
+    .button-gradient {
+        padding: 20px 83px;
+    }
+    background-color: blueviolet;
+    &__inner {
+        padding: 34px 41px 32px 40px;
+        background-color: $color_wh;
+        border-radius: 13px;
+    }
+    &__bottom {
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top {
+        display: flex;
+        column-gap: 90px;
+        &-columns {
+            display: flex;
+            column-gap: 80px;
+        }
+    }
+    &__list-title {
+        font-size: 17px;
+        line-height: 22.83px;
+        font-family: "Ruberoid";
+        text-decoration: underline;
+        padding-bottom: 30px;
+        white-space: nowrap;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 18.61px;
+        letter-spacing: -0.04em;
+        font-family: "Ruberoid";
+        padding-bottom: 20px;
+        white-space: nowrap;
+        &-first {
+            padding-bottom: 12px;
+        }
+    }
+    &__item:last-child {
+        padding-bottom: 0;
+    }
+    &__link {
+        color: $color_bl;
+    }
+    &__focus {
+        position: relative;
+        &-text {
+            font-size: 16px;
+            line-height: 21.94px;
+            color: $color_wh;
+            font-family: "Ruberoid";
+            font-weight: 600;
+            text-transform: uppercase;
+            position: absolute;
+            top: 264px;
+            left: 63px;
+        }
+        &-product {
+            font-size: 16px;
+            line-height: 19.36px;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 17px;
+        }
+        &-product span {
+            font-weight: 400;
+        }
+        &-bottomleft {
+            position: absolute;
+            bottom: 27px;
+            left: -8px;
+        }
+        &-bottomright {
+            transform: scale(-1, 1);
+            position: absolute;
+            bottom: 27px;
+            right: -8px;
+        }
+        &-topleft {
+            transform: scale(1, -1);
+            position: absolute;
+            top: -10px;
+            left: -9px;
+        }
+        &-topright {
+            transform: scale(-1, -1);
+            position: absolute;
+            top: -10px;
+            right: -9px;
+        }
+    }
 }
