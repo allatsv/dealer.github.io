@@ -1,3 +1,110 @@
+var i = 0;
+var elems = document.querySelectorAll(".slick-line__item--full");
+function move() {
+  if (i == 0) {
+    i = 1;
+    
+      var width = 10;
+      var id = setInterval(frame, 20);
+      function frame() {
+        elems.forEach(elem=>{
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      })
+      }
+   
+  }
+  if (i == 0) {
+    i = 1;
+    
+      var width = 10;
+      var id = setInterval(frame, 20);
+      function frame() {
+        elems.forEach(elem=>{
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      })
+      }
+   
+  }
+  if (i == 0) {
+    i = 1;
+    
+      var width = 10;
+      var id = setInterval(frame, 20);
+      function frame() {
+        elems.forEach(elem=>{
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      })
+      }
+   
+  }
+  if (i == 0) {
+    i = 1;
+    
+      var width = 10;
+      var id = setInterval(frame, 20);
+      function frame() {
+        elems.forEach(elem=>{
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      })
+      }
+   
+  }
+  if (i == 0) {
+    i = 1;
+    
+      var width = 10;
+      var id = setInterval(frame, 20);
+      function frame() {
+        elems.forEach(elem=>{
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      })
+      }
+   
+  }
+ 
+}
+  
+
+
+
+
+
+
+
+
+
+
+
 let slides = document.querySelectorAll('.slider-header');
 let currentSlide = 0;
 let slideInterval = setInterval(nextSlide,2000);
@@ -6,6 +113,7 @@ function nextSlide(){
   slides[currentSlide].className = 'slider-header';
   currentSlide = (currentSlide+1)%slides.length;
   slides[currentSlide].className = 'slider-header showing';
+  move()
 }
 
 
@@ -30,7 +138,6 @@ if (formBtns.length > 0) {
 
 
 
-
 let menu = document.querySelector('.nav__list')
 let burger = document.querySelector('.burger')
 let categoriesList = document.querySelector('.categories-list')
@@ -49,6 +156,7 @@ arrowRight.forEach(elem=>{
     console.log(elem.src)
   })
 })
+
 
 
 
